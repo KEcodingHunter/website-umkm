@@ -1,35 +1,62 @@
 <!DOCTYPE html>
 <html lang="id">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Kopi Nusa - Website UMKM</title>
-        <link rel="stylesheet" href="css/style.css">
-  </head>
-  <body>
-    <main class="page">
-      <section class="hero">
-        <p class="eyebrow">UMKM Pekalongan</p>
-        <h1>Kopi Nusa</h1>
-        <p>Kopi lokal pilihan untuk teman belajar, bekerja, dan berdiskusi.</p>
-        <button id="promoButton" type="button">Lihat promo hari ini</button>
-      </section>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kopi Nusa - Beranda</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a href="#konten" class="skip-link">Lewati ke konten utama</a>
+
+    <header class="site-header">
+        <a class="brand" href="index.html">Kopi Nusa</a>
+        <nav aria-label="Navigasi Utama">
+            <a href="index.html" aria-current="page">Beranda</a>
+            <a href="tentang.html">Tentang Kami</a>
+        </nav>
+    </header>
+
+    <main id="konten" class="page">
+        <section class="hero" aria-labelledby="hero-title">
+            <p class="eyebrow">UMKM Pekalongan</p>
+            <h1 id="hero-title">Kopi Nusa</h1>
+            <p>Kami meracik kopi pilihan dari petani sekitar dengan proses sederhana dan rasa yang bersahabat untuk teman belajar, bekerja, dan berdiskusi.</p>
+            <button id="promoButton" type="button">Lihat promo hari ini</button>
+        </section>
       
         <section aria-labelledby="produk-title">
-          <h2 id="produk-title">Produk Unggulan</h2>
-          <ul class="products">
-            <li>Kopi Tubruk Signature - Rp18.000</li>
-            <li>Cold Brew Aren - Rp22.000</li>
-          </ul>
+            <h2 id="produk-title">Produk Unggulan</h2>
+            <div class="products">
+                <article>
+                    <img class="profile-image" src="assets/images/art-latte.png" alt="Secangkir Art Latte Signature hangat di atas meja kayu" />
+                    <h3>Art Latte Signature</h3>
+                    <p>Art Latte Signature by Nusa Kopi</p>
+                    <p>Rp18.000</p>
+                </article>
+                <article>
+                    <img class="profile-image" src="assets/images/aren-cold-brew.png" alt="Es Cold Brew Aren segar dalam gelas kaca" />
+                    <h3>Cold Brew Aren</h3>
+                    <p>Cold Brew Dengan Tambahan Gula Aren Yang Legit</p>
+                    <p>Rp22.000</p>
+                </article>
+            </div>
         </section>
 
-        <!-- Tambahan Section Jam Buka dan Lokasi -->
-        <section aria-labelledby="lokasi-title">
-          <h2 id="lokasi-title">Lokasi & Jam Operasional</h2>
-          <p>📍 Jl. Batik Kencana No. 42, Pekalongan</p>
-          <p>🕒 Buka setiap hari: 08.00 - 22.00 WIB</p>
+        <section id="kontak-singkat" aria-labelledby="kontak-heading">
+            <h2 id="kontak-heading">Kontak Singkat</h2>
+            <p>📍 Alamat: Jl. Batik Kencana No. 42, Pekalongan</p>
+            <p>🕒 Jam Layanan: Buka Setiap Hari (08.00 - 22.00 WIB)</p>
+            <p>
+                <a href="https://wa.me/+6287643467357" target="_blank" rel="noopener noreferrer">Hubungi admin Kopi Nusa via WhatsApp (08XX-XXXX-XXXX)</a>
+            </p>
         </section>
-      </main>
-      <script src="js/script.js"></script>
-    </body>
-  </html>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Kopi Nusa.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
