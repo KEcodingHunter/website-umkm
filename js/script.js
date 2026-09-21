@@ -13,3 +13,11 @@ console.log("Daftar heading pada halaman:");
 headings.forEach((heading) => {
   console.log(heading.tagName, "-", heading.textContent);
 });
+
+const tableRows = document.querySelectorAll("tbody tr");
+const tableCaption = document.querySelector("caption");
+
+if (tableRows.length > 0) {
+  console.log("Jumlah produk pada tabel: " + tableRows.length);
+  console.log("Caption tabel: " + (tableCaption ? tableCaption.textContent : "Tidak ada caption"));
+}

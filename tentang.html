@@ -10,17 +10,26 @@
     <a href="#konten" class="skip-link">Lewati ke konten utama</a>
 
     <header class="site-header">
-        <a class="brand" href="index.html">Kopi Nusa</a>
-        <nav aria-label="Navigasi Utama">
-            <a href="index.html">Beranda</a>
-            <a href="tentang.html" aria-current="page">Tentang Kami</a>
+        <nav class="nav" aria-label="Navigasi utama">
+            <a class="brand" href="index.html">Kopi Nusa</a>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a aria-current="page" href="tentang.html">Tentang Kami</a></li>
+                <li><a href="produk.html">Produk</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+            </ul>
         </nav>
     </header>
 
     <main id="konten" class="page">
         <section id="profil" aria-labelledby="profil-title">
             <h1 id="profil-title">Tentang Kopi Nusa</h1>
-            <img class="profile-image" src="assets/images/profil.png" alt="Profil Nusa Kopi" />
+            
+            <figure>
+                <img class="profile-image" src="assets/images/profil.png" alt="Area tempat duduk pelanggan di Kopi Nusa dengan desain interior kayu bergaya industrial" />
+                <figcaption>Suasana interior kedai Kopi Nusa yang dirancang untuk kenyamanan pengunjung harian.</figcaption>
+            </figure>
+            
             <p>Kopi Nusa mengutamakan bahan lokal dan pelayanan ramah untuk pelanggan harian. Kami hadir untuk menemani hari-hari Anda dengan secangkir kopi hangat.</p>
         </section>
 
@@ -45,7 +54,7 @@
     </main>
 
     <footer class="site-footer">
-        <p>&copy; 2026 Kopi Nusa.</p>
+        <p>&copy; 2026 Kopi Nusa. Data pada halaman ini bersifat dummy.</p>
     </footer>
 
     <script src="js/script.js"></script>

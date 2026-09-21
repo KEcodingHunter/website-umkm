@@ -47,19 +47,31 @@ a:focus-visible, button:focus-visible {
   text-decoration: none;
 }
 
-nav {
-  float: right;
+.nav {
+  display: block;
 }
 
-nav a {
+.nav ul {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
   display: inline-block;
   margin-left: 16px;
+}
+
+.nav a {
   color: #4b2e21;
   font-weight: 700;
   text-decoration: none;
+  display: inline-block;
+  padding-top: 2px;
 }
 
-nav a[aria-current="page"] { 
+.nav a[aria-current="page"] { 
   font-weight: 800;
 }
 
@@ -92,10 +104,9 @@ h1 {
   max-width: 420px;
   border-radius: 18px;
   object-fit: cover;
-  margin-bottom: 12px;
 }
 
-ul {
+main ul {
   line-height: 1.8;
 }
 
@@ -116,3 +127,11 @@ button {
   color: white;
   text-align: center;
 }
+
+img { max-width: 100%; height: auto; }
+figure { margin: 0 0 24px; }
+figcaption { margin-top: 8px; color: #6b5b52; }
+table { width: 100%; border-collapse: collapse; }
+caption { margin-bottom: 8px; font-weight: 700; text-align: left; }
+th,
+td { padding: 10px; text-align: left; border: 1px solid #dccbbc; }
