@@ -20,9 +20,9 @@ main.page {
 }
 .skip-link:focus { top: 8px; left: 8px; }
 
-a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { 
+a:focus-visible, button:focus-visible { 
   outline: 3px solid #2563eb; 
-  outline-offset: 2px; 
+  outline-offset: 4px; 
 }
 
 .site-header {
@@ -128,23 +128,18 @@ button {
   text-align: center;
 }
 
-form {
+form,
+pre {
   background: white;
   border: 1px solid #ead8c3;
   border-radius: 16px;
   padding: 18px;
-  margin-bottom: 24px;
 }
 
 .field {
   display: grid;
   gap: 6px;
-  margin-bottom: 16px;
-}
-
-.field label {
-  display: block;
-  margin-bottom: 6px;
+  margin-bottom: 14px;
 }
 
 label,
@@ -163,17 +158,13 @@ button {
 fieldset {
   display: grid;
   gap: 8px;
-  margin: 0 0 16px;
+  margin: 0 0 14px;
   border: 1px solid #ead8c3;
   border-radius: 12px;
 }
 
-#preview-form {
-  padding: 16px;
-  white-space: pre-wrap;
-  background: white;
-  border: 1px solid #dccbbc;
-  border-radius: 12px;
+button {
+  cursor: pointer;
 }
 
 img { max-width: 100%; height: auto; }
