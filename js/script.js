@@ -21,3 +21,16 @@ if (tableRows.length > 0) {
   console.log("Jumlah produk pada tabel: " + tableRows.length);
   console.log("Caption tabel: " + (tableCaption ? tableCaption.textContent : "Tidak ada caption"));
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleButtons = document.querySelectorAll(".btn-toggle");
+
+  toggleButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const card = button.closest(".product-card");
+      if (card) {
+        card.classList.toggle("collapsed");
+      }
+    });
+  });
+});

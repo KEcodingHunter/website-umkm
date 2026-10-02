@@ -10,8 +10,8 @@
     <a href="#konten" class="skip-link">Lewati ke konten utama</a>
 
     <header class="site-header">
+        <a class="brand" href="index.html">Kopi Nusa</a>
         <nav class="nav" aria-label="Navigasi utama">
-            <a class="brand" href="index.html">Kopi Nusa</a>
             <ul>
                 <li><a aria-current="page" href="index.html">Beranda</a></li>
                 <li><a href="tentang.html">Tentang Kami</a></li>
@@ -29,45 +29,76 @@
             <p>Kami meracik kopi pilihan dari petani sekitar dengan proses sederhana dan rasa yang bersahabat untuk teman belajar, bekerja, dan berdiskusi.</p>
             <button id="promoButton" type="button">Lihat promo hari ini</button>
         </section>
-      
-        <section aria-labelledby="produk-title">
-            <h2 id="produk-title">Produk Unggulan</h2>
-            <div class="products">
-                <article>
-                    <figure>
-                        <img class="profile-image" src="assets/images/art-latte.png" alt="Secangkir Art Latte Signature hangat di atas meja kayu dengan pola latte art daun" />
-                        <figcaption>Art Latte Signature disajikan hangat dalam cangkir keramik.</figcaption>
-                    </figure>
-                    <h3>Art Latte Signature</h3>
-                    <p>Art Latte Signature by Nusa Kopi</p>
-                </article>
-                <article>
-                    <figure>
-                        <img class="profile-image" src="assets/images/aren-cold-brew.png" alt="Es Cold Brew Aren segar dalam gelas kaca transparan dengan es batu" />
-                        <figcaption>Cold Brew Aren, paduan kopi dingin dengan manis legit gula aren.</figcaption>
-                    </figure>
-                    <h3>Cold Brew Aren</h3>
-                    <p>Cold Brew Dengan Tambahan Gula Aren Yang Legit</p>
-                </article>
-                <article>
-                    <figure>
-                        <img class="profile-image" 
-                             src="assets/images/kopi-susu-pandan.png" 
-                             srcset="assets/images/kopi-susu-pandan.png 400w, assets/images/kopi-susu-pandan.png 800w" 
-                             sizes="(max-width: 600px) 400px, 800px" 
-                             alt="Es kopi susu dengan gradasi sirup pandan hijau di bagian bawah gelas kaca" />
-                        <figcaption>Kopi Susu Pandan, kesegaran kopi botol 250 ml dengan wangi pandan asli (Rp25.000).</figcaption>
-                    </figure>
-                    <h3>Kopi Susu Pandan</h3>
-                    <p>Es Kopi Susu dengan sirup pandan khas Nusantara</p>
-                </article>
+
+        <section class="featured-section" aria-label="Daftar Produk Unggulan">
+            <div class="product-container">
+                <div class="product-grid">
+                    
+                    <article class="product-card">
+                        <div class="card-image-box">
+                            <img src="assets/images/art-latte.png" alt="Secangkir Art Latte Signature hangat" />
+                            <div class="card-title-banner">
+                                <h3>Art Latte Signature</h3>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Art Latte Signature disajikan hangat dalam sebuah cangkir.</p>
+                            <a href="kontak.html" class="btn-pesan">Pesan</a>
+                        </div>
+                        <div class="card-footer-toggle">
+                            <button type="button" class="btn-toggle" aria-label="Toggle detail Art Latte Signature">
+                                <span class="icon-arrow">&#9660;</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="product-card collapsed">
+                        <div class="card-image-box">
+                            <img src="assets/images/aren-cold-brew.png" alt="Es Cold Brew Aren segar" />
+                            <div class="card-title-banner">
+                                <h3>Cold Brew Aren</h3>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Cold Brew dingin segar dipadukan dengan manis legit gula aren khas Nusantara.</p>
+                            <a href="kontak.html" class="btn-pesan">Pesan</a>
+                        </div>
+                        <div class="card-footer-toggle">
+                            <button type="button" class="btn-toggle" aria-label="Toggle detail Cold Brew Aren">
+                                <span class="icon-arrow">&#9660;</span>
+                            </button>
+                        </div>
+                    </article>
+
+                    <article class="product-card collapsed">
+                        <div class="card-image-box">
+                            <img src="assets/images/kopi-susu-pandan.png" 
+                                 srcset="assets/images/kopi-susu-pandan.png 400w, assets/images/kopi-susu-pandan.png 800w" 
+                                 sizes="(max-width: 600px) 400px, 800px" 
+                                 alt="Es kopi susu dengan sirup pandan" />
+                            <div class="card-title-banner">
+                                <h3>Kopi Susu Pandan</h3>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <p>Es Kopi Susu lembut dengan aroma dan rasa sirup pandan asli yang menyegarkan.</p>
+                            <a href="kontak.html" class="btn-pesan">Pesan</a>
+                        </div>
+                        <div class="card-footer-toggle">
+                            <button type="button" class="btn-toggle" aria-label="Toggle detail Kopi Susu Pandan">
+                                <span class="icon-arrow">&#9660;</span>
+                            </button>
+                        </div>
+                    </article>
+
+                </div>
             </div>
         </section>
 
         <section id="kontak-singkat" aria-labelledby="kontak-heading">
             <h2 id="kontak-heading">Kontak Singkat</h2>
-            <p>📍 Alamat: Jl. Batik Kencana No. 42, Pekalongan</p>
-            <p>🕒 Jam Layanan: Buka Setiap Hari (08.00 - 22.00 WIB)</p>
+            <p>Alamat: Jl. Batik Kencana No. 42, Pekalongan</p>
+            <p>Jam Layanan: Buka Setiap Hari (08.00 - 22.00 WIB)</p>
             <p>
                 <a href="https://wa.me/+6287643467357" target="_blank" rel="noopener noreferrer">Hubungi admin Kopi Nusa via WhatsApp (08XX-XXXX-XXXX)</a>
             </p>
