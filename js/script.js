@@ -29,7 +29,8 @@ document.addEventListener("DOMContentLoaded", () => {
     button.addEventListener("click", () => {
       const card = button.closest(".product-card");
       if (card) {
-        card.classList.toggle("collapsed");
+        const isCollapsed = card.classList.toggle("collapsed");
+        button.setAttribute("aria-expanded", String(!isCollapsed));
       }
     });
   });
