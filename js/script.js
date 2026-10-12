@@ -28,9 +28,30 @@ document.addEventListener("DOMContentLoaded", () => {
   toggleButtons.forEach((button) => {
     button.addEventListener("click", () => {
       const card = button.closest(".product-card");
-      if (card) {
-        const isCollapsed = card.classList.toggle("collapsed");
-        button.setAttribute("aria-expanded", String(!isCollapsed));
+      if (!card) return;
+
+      const isCollapsed = card.classList.contains("collapsed");
+
+      if (isCollapsed) {
+        // Ketika salah satu dibuka (memanjang), kartu lainnya tetap tertutup (ditutup)
+        const container = card.closest(".product-grid") || document;
+        container.querySelectorAll(".product-card").forEach((otherCard) => {
+          if (otherCard !== card) {
+            otherCard.classList.add("collapsed");
+            const otherBtn = otherCard.querySelector(".btn-toggle");
+            if (otherBtn) {
+              otherBtn.setAttribute("aria-expanded", "false");
+            }
+          }
+        });
+
+        // Buka kartu yang diklik
+        card.classList.remove("collapsed");
+        button.setAttribute("aria-expanded", "true");
+      } else {
+        // Jika sudah terbuka dan diklik kembali, tutup kartu ini
+        card.classList.add("collapsed");
+        button.setAttribute("aria-expanded", "false");
       }
     });
   });
