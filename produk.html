@@ -9,16 +9,27 @@
 <body>
     <a class="skip-link" href="#konten">Lewati ke konten utama</a>
     <header class="site-header">
-        <a class="brand" href="index.html">Kopi Nusa</a>
-        <nav class="nav" aria-label="Navigasi utama">
-            <ul>
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="tentang.html">Tentang Kami</a></li>
-                <li><a aria-current="page" href="produk.html">Produk</a></li>
-                <li><a href="galeri.html">Galeri</a></li>
-                <li><a href="kontak.html">Kontak</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <a class="brand" href="index.html">
+                <span class="brand-icon" aria-hidden="true">☕</span>
+                <span>Kopi Nusa</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="primaryNav">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <nav class="nav" id="primaryNav" aria-label="Navigasi utama">
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="tentang.html">Tentang Kami</a></li>
+                    <li><a aria-current="page" href="produk.html">Produk</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a href="kontak.html">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
     </header>
     <main id="konten" class="page">
         <h1>Produk Kopi Nusa</h1>
@@ -73,6 +84,9 @@
 
         <section aria-labelledby="harga-title">
             <h2 id="harga-title">Daftar Harga</h2>
+            <p class="table-scroll-hint" aria-hidden="true">
+                <span>👉</span> Geser tabel ke samping untuk melihat detail ukuran &amp; harga
+            </p>
             <div class="table-container" tabindex="0" role="region" aria-labelledby="harga-caption">
                 <table>
                     <caption id="harga-caption">Daftar harga produk Kopi Nusa</caption>
@@ -109,6 +123,12 @@
         <p>&copy; 2026 Kopi Nusa. Data pada halaman ini bersifat dummy.</p>
     </footer>
     
+        <button id="backToTop" class="back-to-top" type="button" aria-label="Kembali ke atas" title="Kembali ke atas">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
     <script src="js/script.js"></script>
 </body>
 </html>

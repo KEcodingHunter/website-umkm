@@ -11,16 +11,27 @@
     <a href="#konten" class="skip-link">Lewati ke konten utama</a>
 
     <header class="site-header">
-        <a class="brand" href="index.html">Kopi Nusa</a>
-        <nav class="nav" aria-label="Navigasi utama">
-            <ul>
-                <li><a href="index.html">Beranda</a></li>
-                <li><a href="tentang.html">Tentang Kami</a></li>
-                <li><a href="produk.html">Produk</a></li>
-                <li><a href="galeri.html">Galeri</a></li>
-                <li><a aria-current="page" href="kontak.html">Kontak</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <a class="brand" href="index.html">
+                <span class="brand-icon" aria-hidden="true">☕</span>
+                <span>Kopi Nusa</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="primaryNav">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <nav class="nav" id="primaryNav" aria-label="Navigasi utama">
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="tentang.html">Tentang Kami</a></li>
+                    <li><a href="produk.html">Produk</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                    <li><a aria-current="page" href="kontak.html">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
     </header>
 
     <main id="konten" class="page">
@@ -72,6 +83,12 @@
     <footer class="site-footer">
         <p>&copy; 2026 Kopi Nusa. Data pada halaman ini bersifat dummy.</p>
     </footer>
+
+        <button id="backToTop" class="back-to-top" type="button" aria-label="Kembali ke atas" title="Kembali ke atas">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
 
     <script src="js/script.js"></script>
 </body>
