@@ -608,6 +608,91 @@ tbody tr:hover {
 }
 
 /* ========================================================
+   P09: OUTPUT RENDER JAVASCRIPT DINAMIS
+   ======================================================== */
+.section {
+  margin: clamp(24px, 4vw, 36px) 0;
+}
+
+.section-header {
+  margin-bottom: var(--space-3);
+}
+
+#produk-ringkasan {
+  display: inline-block;
+  margin: var(--space-2) 0 0;
+  padding: 8px 16px;
+  background-color: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  color: var(--color-primary-strong);
+}
+
+.js-product-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-3);
+  align-items: stretch;
+  margin-top: var(--space-3);
+}
+
+.js-product-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  font-size: 1rem;
+  text-align: left;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-3);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.js-product-card h3 {
+  margin: var(--space-2) 0 var(--space-1);
+  color: var(--color-primary);
+  font-size: 1.25rem;
+}
+
+.js-product-card p {
+  margin: var(--space-1) 0;
+}
+
+.js-product-card .price {
+  font-weight: 700;
+  color: var(--color-primary);
+  font-size: 1.125rem;
+  margin: var(--space-1) 0 var(--space-2);
+}
+
+.stock-badge {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 0.25rem var(--space-2);
+  border-radius: var(--radius-full);
+  font-size: 0.8125rem;
+  font-weight: 700;
+  background: #dcfce7;
+  color: #166534;
+  margin: var(--space-1) 0;
+}
+
+.stock-badge.warning {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.stock-badge.empty {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+/* ========================================================
    RESPONSIVE BREAKPOINTS (MOBILE-FIRST)
    Breakpoint berbasis gejala dan kebutuhan konten:
    - 42rem (~672px): Hero & Galeri 2 kolom, Navigasi horizontal
@@ -645,14 +730,16 @@ tbody tr:hover {
     gap: var(--space-4);
   }
 
-  .product-grid {
+  .product-grid,
+  .js-product-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: var(--space-4);
   }
 }
 
 @media (min-width: 58rem) {
-  .product-grid {
+  .product-grid,
+  .js-product-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: var(--space-4);
   }
