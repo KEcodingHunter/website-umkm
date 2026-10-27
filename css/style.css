@@ -423,7 +423,6 @@ tbody tr:hover {
   text-decoration: underline;
 }
 
-/* Featured Section (Mockup Khusus Index) */
 .featured-section {
   max-width: 100%;
   margin: clamp(20px, 4vw, 32px) 0;
@@ -607,9 +606,6 @@ tbody tr:hover {
   object-fit: cover;
 }
 
-/* ========================================================
-   P09: OUTPUT RENDER JAVASCRIPT DINAMIS
-   ======================================================== */
 .section {
   margin: clamp(24px, 4vw, 36px) 0;
 }
@@ -691,13 +687,6 @@ tbody tr:hover {
   background: #fee2e2;
   color: #991b1b;
 }
-
-/* ========================================================
-   RESPONSIVE BREAKPOINTS (MOBILE-FIRST)
-   Breakpoint berbasis gejala dan kebutuhan konten:
-   - 42rem (~672px): Hero & Galeri 2 kolom, Navigasi horizontal
-   - 58rem (~928px): Katalog Produk Pilihan 3 kolom modular
-   ======================================================== */
 
 @media (min-width: 42rem) {
   .site-header {

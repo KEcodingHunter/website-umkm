@@ -1,9 +1,7 @@
 "use strict";
 
-// P09-02: Koneksi script awal
 console.log("P09 JavaScript aktif");
 
-// P09-02 & P09-01: Model data produk lokal UMKM (Array of Objects)
 const produkUmkm = [
   {
     nama: "Arabika Gayo",
@@ -35,20 +33,16 @@ const produkUmkm = [
   },
 ];
 
-// Menampilkan data produk ke Console dalam format tabel
 console.table(produkUmkm);
 
-// Formatter mata uang Rupiah
 const formatRupiah = new Intl.NumberFormat("id-ID", {
   style: "currency",
   currency: "IDR",
   maximumFractionDigits: 0,
 });
 
-// Uji coba format mata uang produk pertama
 console.log(formatRupiah.format(produkUmkm[0].harga));
 
-// Conditional status stok produk
 function statusStok(stok) {
   if (stok === 0) {
     return { label: "Habis", className: "empty" };
@@ -71,7 +65,6 @@ function labelKategori(kategori) {
   }
 }
 
-// Render data produk ke DOM dengan aman menggunakan guard clause
 function renderProduk() {
   const grid = document.querySelector("#produk-dinamis");
   const ringkasan = document.querySelector("#produk-ringkasan");
