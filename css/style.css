@@ -688,6 +688,97 @@ tbody tr:hover {
   color: #991b1b;
 }
 
+/* P10 Featured Card & Highlight Styling */
+.js-featured-card {
+  background: var(--color-surface);
+  border: 2px solid var(--color-primary);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  margin-top: var(--space-3);
+  margin-bottom: var(--space-4);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.js-featured-card .featured-badge {
+  display: inline-block;
+  background: var(--color-primary);
+  color: #ffffff;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  padding: 0.25rem var(--space-2);
+  border-radius: var(--radius-full);
+  margin-bottom: var(--space-2);
+}
+
+.js-featured-card h3 {
+  margin: var(--space-1) 0;
+  color: var(--color-primary);
+  font-size: 1.35rem;
+}
+
+.js-featured-card .category-text {
+  margin: 0 0 var(--space-2);
+  color: var(--color-text-muted, #64748b);
+  font-size: 0.95rem;
+}
+
+.js-featured-card .price {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+  margin: var(--space-2) 0;
+}
+
+.js-featured-card .stock-info {
+  margin: var(--space-2) 0 0;
+  font-size: 0.9rem;
+}
+
+/* P10 Promo & Discount Badges */
+.promo-price {
+  color: #b91c1c;
+  font-weight: 700;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #94a3b8;
+  font-size: 0.875rem;
+  margin-left: var(--space-1);
+}
+
+.discount-badge {
+  display: inline-block;
+  background: #fee2e2;
+  color: #b91c1c;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-full);
+  margin-left: var(--space-1);
+}
+
+.js-product-card .category-text {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin: 0 0 var(--space-2);
+}
+
+.js-product-card .card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: var(--space-2);
+  border-top: 1px dashed var(--color-border);
+  font-size: 0.85rem;
+}
+
+.js-product-card .card-footer .action-tag {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
 @media (min-width: 42rem) {
   .site-header {
     flex-direction: row;
