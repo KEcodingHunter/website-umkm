@@ -688,7 +688,82 @@ tbody tr:hover {
   color: #991b1b;
 }
 
-/* P10 Featured Card & Highlight Styling */
+.filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-block: 1rem 0.75rem;
+}
+
+.filter-bar-secondary {
+  margin-block: 0 1.25rem;
+}
+
+.filter-label {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-muted);
+  margin-right: 0.25rem;
+}
+
+.filter-button {
+  margin-top: 0;
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-full);
+  background: var(--color-surface);
+  color: var(--color-text);
+  padding: 0.45rem 0.95rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.filter-button:hover,
+.filter-button:focus-visible {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+.filter-button.is-active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #ffffff;
+}
+
+.empty-state {
+  grid-column: 1 / -1;
+  border: 1px dashed #94a3b8;
+  border-radius: var(--radius-lg);
+  padding: 1.25rem;
+  background: var(--color-surface);
+  color: #475569;
+  text-align: center;
+  margin: 0;
+}
+
+.ghost-button {
+  margin-top: var(--space-2);
+  align-self: flex-start;
+  background: transparent;
+  border: 1px solid var(--color-border-subtle);
+  border-radius: var(--radius-md);
+  color: var(--color-muted);
+  padding: 0.35rem 0.75rem;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: border-color 0.2s ease, color 0.2s ease, background-color 0.2s ease;
+}
+
+.ghost-button:hover,
+.ghost-button:focus-visible {
+  border-color: #991b1b;
+  color: #991b1b;
+  background: #fef2f2;
+}
+
 .js-featured-card {
   background: var(--color-surface);
   border: 2px solid var(--color-primary);
@@ -734,7 +809,6 @@ tbody tr:hover {
   font-size: 0.9rem;
 }
 
-/* P10 Promo & Discount Badges */
 .promo-price {
   color: #b91c1c;
   font-weight: 700;
